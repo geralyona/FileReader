@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.6" />
+    <PackageReference Include="Ninject.Extensions.Factory" Version="3.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileReader.Common\FileReader.Common.csproj" />
+    <ProjectReference Include="..\FileReader.Presentation\FileReader.Presentation.csproj" />
+    <ProjectReference Include="..\FileReader.Services\FileReader.Services.csproj" />
+    <ProjectReference Include="..\FileReader.UI\FileReader.UI.csproj" />
+    <ProjectReference Include="..\FileReader.ViewModels\FileReader.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

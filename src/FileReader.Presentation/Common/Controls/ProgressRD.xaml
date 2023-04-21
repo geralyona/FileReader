@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModels="clr-namespace:FileReader.ViewModels.Operation;assembly=FileReader.ViewModels">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../LayoutRD.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+    <DataTemplate DataType="{x:Type viewModels:ProgressStatusVM}">
+        <StackPanel >
+            <ProgressBar Value="{Binding Progress}" Maximum="1" MinHeight="20"/>
+
+            <TextBlock Margin="{StaticResource ItemTopMarginKey}" Text="{Binding StatusMessage}"/>
+        </StackPanel>
+    </DataTemplate>
+    
+</ResourceDictionary>

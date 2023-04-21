@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Control root Grid margin -->
+    <Thickness x:Key="RootGridMarginKey">10</Thickness>
+    <!--Insided item margin-->
+    <Thickness x:Key="ItemTopMarginKey">0,10,0,0</Thickness>
+
+</ResourceDictionary>
